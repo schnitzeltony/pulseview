@@ -17,9 +17,6 @@
  * along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-extern "C" {
-#include <libsigrokdecode/libsigrokdecode.h>
-}
 
 #include <limits>
 #include <mutex>
@@ -59,6 +56,10 @@ extern "C" {
 #include <pv/widgets/decodergroupbox.hpp>
 #include <pv/widgets/decodermenu.hpp>
 #include <pv/widgets/flowlayout.hpp>
+
+extern "C" {
+#include <libsigrokdecode/libsigrokdecode.h>
+}
 
 using std::abs;
 using std::find_if;
